@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# 🚀 Mintos — Solana Token Launchpad (Devnet)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Mintos**, a lightweight Solana token launchpad built for Devnet. This dApp allows you to:
 
-Currently, two official plugins are available:
+- 🔗 Connect your Solana wallet
+- 💸 Airdrop yourself some free Devnet SOL
+- 🪙 Create & launch your own custom SPL token on the Solana Devnet
+- ⚡ Powered by `@solana/web3.js` and `@solana/spl-token`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔗 Live App
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 [Launch the App](https://mintos-ayps.vercel.app)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧪 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ✅ Connect Phantom or any Solana-compatible wallet
+- ✅ One-click airdrop faucet for Devnet SOL
+- ✅ Launch a new SPL token with:
+  - Custom name
+  - Custom symbol
+  - Fixed supply
+- ✅ All interactions on Solana **Devnet**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🖥️ Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [React + Vite](https://vitejs.dev/)
+- [Solana Web3.js](https://github.com/solana-labs/solana-web3.js)
+- [@solana/spl-token](https://github.com/solana-labs/solana-program-library/tree/master/token/js)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/) for deployment
+
+---
+
+## ⚙️ How to Use
+
+1. Open the app: [mintos-ayps.vercel.app](https://mintos-ayps.vercel.app)
+2. Click **Connect Wallet** and choose Phantom (or another wallet).
+3. Click **Airdrop 1 SOL** to receive Devnet SOL.
+4. Fill in your token details (name, symbol, supply).
+5. Click **Launch Token** — and you're done! 🪄
+
+---
+
+## 📸 Screenshots
+
+> _(Add screenshots of the UI here if desired)_
+
+---
+
+## 🛠 Dev Setup
+
+Clone the repo and run locally:
+
+```bash
+git clone https://github.com/0xcuriosity/mintos.git
+cd mintos
+npm install
+npm run dev
